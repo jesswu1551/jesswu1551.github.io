@@ -38,7 +38,7 @@ nav a {
   font-size: 28px;
 }
 #top_container{
-margin: 40px 0 40px 40px;
+  margin: 40px 0 40px 40px;
 }
 
 #info_container{
@@ -79,6 +79,7 @@ margin: 40px 0 40px 40px;
 }
 
 #about #logo{
+
 margin: 80px 0;
 }
 
