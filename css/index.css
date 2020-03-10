@@ -6,11 +6,14 @@ body{
 
 header{
   text-align: right;
+  padding-bottom: 5px;
   border-bottom: 1px solid #d3d3d3;
 }
 
 #logo{
   float: right;
+  margin: 12px 40px;
+
 }
 
 h1{
@@ -24,6 +27,10 @@ a{
 
 a:visited{
   color:#43457F;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 .blue{
@@ -96,4 +103,15 @@ th, td {
   padding: 2px;
   height: 24px;
   min-width: 26px;
+}
+
+#home:link, #home:visited {
+  background-color: #0275d8;
+  color: white;
+  padding: 10px 20px;
+  margin: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  opacity: 0.7;
 }
