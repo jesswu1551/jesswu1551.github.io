@@ -116,3 +116,12 @@ th, td {
   display: inline-block;
   opacity: 0.7;
 }
+
+#tag_table{
+  border-collapse: collapse;
+  margin: 40px;
+}
+
+#tag_table_tr{
+  background-color:#d3d3d3;
+}
