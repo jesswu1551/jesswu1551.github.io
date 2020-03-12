@@ -51,3 +51,12 @@ iframe{
   max-width: 768px;
   text-align: center;
 }
+
+.block-mr{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+section{
+  margin: 40px;
+}
