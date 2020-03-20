@@ -10,21 +10,13 @@ header {
   border-bottom: 1px solid #d3d3d3;
 }
 
-a:link {
-  color: #007bff;
-}
+a:link { color: #007bff; }
 
-a:visited {
-  color: #541BC4;
-}
+a:visited { color: #541BC4; }
 
-a:hover {
-  color: #0056b3;
-}
+a:hover { color: #0056b3; }
 
-nav a {
-  text-decoration: none;
-}
+nav a { text-decoration: none; }
 
 #recursive {
   padding: 40px;
@@ -64,6 +56,4 @@ nav a {
   opacity: .85;
 }
 
-#home-btn:hover {
-  background-color: #0056b3;
-}
+#home-btn:hover { background-color: #0056b3; }

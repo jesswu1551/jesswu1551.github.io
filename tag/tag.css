@@ -15,21 +15,13 @@ header {
   margin: 40px;
 }
 
-a:link {
-  color: #007bff;
-}
+a:link { color: #007bff; }
 
-a:visited {
-  color: #541BC4;
-}
+a:visited { color: #541BC4; }
 
-a:hover {
-  color: #0056b3;
-}
+a:hover { color: #0056b3; }
 
-nav a {
-  text-decoration: none;
-}
+nav a { text-decoration: none; }
 
 #home-btn:link, #home-btn:visited {
   display: inline-block;
@@ -42,17 +34,11 @@ nav a {
   opacity: .85;
 }
 
-#home-btn:hover {
-  background-color: #0056b3;
-}
+#home-btn:hover { background-color: #0056b3; }
 
-#tag_table {
-  border-collapse: collapse;
-}
+#tag_table { border-collapse: collapse; }
 
-#tag_table_tr {
-  background-color: #d3d3d3;
-}
+#tag_table_tr { background-color: #d3d3d3; }
 
 th, td {
   padding: 2px;

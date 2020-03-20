@@ -20,34 +20,22 @@ h1 {
   color: #007bff;
 }
 
-a:link {
-  color: #007bff;
-}
+a:link { color: #007bff; }
 
-a:visited {
-  color: #541BC4;
-}
+a:visited { color: #541BC4; }
 
-a:hover {
-  color: #0056b3;
-}
+a:hover { color: #0056b3; }
 
-nav a {
-  text-decoration: none;
-}
+nav a { text-decoration: none; }
 
 .color {
   font-size: 28px;
   color: #007bff;
 }
 
-#top_container {
-  margin: 40px 0 40px 40px;
-}
+#top_container { margin: 40px 0 40px 40px; }
 
-#info_container {
-  font-size: 20px;
-}
+#info_container { font-size: 20px; }
 
 #mid_container {
   padding: 40px 0;

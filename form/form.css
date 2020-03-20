@@ -16,21 +16,13 @@ header {
   background-color: #f5f5f5;
 }
 
-a:link {
-  color: #007bff;
-}
+a:link { color: #007bff; }
 
-a:visited {
-  color: #541BC4;
-}
+a:visited { color: #541BC4; }
 
-a:hover {
-  color: #0056b3;
-}
+a:hover { color: #0056b3; }
 
-nav a {
-  text-decoration: none;
-}
+nav a { text-decoration: none; }
 
 div > h3 {
   padding: 10px;
@@ -41,10 +33,6 @@ div > h3 {
 label {
   margin-left: 20px;
   line-height: 2;
-}
-
-.form-option {
-  padding-left: 20px;
 }
 
 #home-btn:link, #home-btn:visited {
@@ -58,11 +46,9 @@ label {
   opacity: .85;
 }
 
-#home-btn:hover {
-  background-color: #0056b3;
-}
+#home-btn:hover { background-color: #0056b3; }
 
-#sub-btn{
+#sub-btn {
   display: inline-block;
   padding: 10px 20px;
   margin: 40px;
@@ -76,6 +62,6 @@ label {
   opacity: .85;
 }
 
-#sub-btn:hover {
-  background-color: #0056b3;
-}
+#sub-btn:hover { background-color: #0056b3; }
+
+.form-option { padding-left: 20px; }
