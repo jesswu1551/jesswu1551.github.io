@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Practice | Table</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="table.css">
 </head>
 <body>
@@ -36,9 +37,9 @@
         <td></td>
       </tr>
       <tr>
-        <th colspan="2"></th>
-        <td></td>
-        <td></td>
+        <th class="txbox-hover" colspan="2"><input type="text"></th>
+        <td class="txbox-hover"><input type="text"></td>
+        <td class="txbox-hover"><input type="text"></td>
       </tr>
       <tr>
         <th></th>
@@ -61,13 +62,13 @@
       <tr>
         <th rowspan="2">SPI</th>
         <td>不良片數</td>
-        <td>101</td>
-        <td>99</td>
+        <td class="text-hover">101</td>
+        <td class="text-hover">99</td>
       </tr>
       <tr>
         <td>正常片數</td>
-        <td>9995</td>
-        <td>8966</td>
+        <td class="text-hover">9995</td>
+        <td class="text-hover">8966</td>
       </tr>
     </table>
     <!-- End Table2 -->
@@ -202,9 +203,10 @@
       </tr>
     </table>
     <!-- End Table3 -->
-  </div>
 
-  <a id="home-btn" href="../index.html"> ❮ Home</a>
+    <a id="home-btn" href="../index.html"> ❮ Home</a>
+
+  </div>
 
 </body>
 </html>
