@@ -64,7 +64,7 @@ th, td {
 #home-btn:hover { background-color: #0056b3; }
 
 input[type="text"] {
-  display: none;
+  border: transparent;
   width: 100%;
   box-sizing: border-box;
 }
