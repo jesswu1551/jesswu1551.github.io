@@ -47,3 +47,9 @@ th, td {
   border: 1px solid black;
   border-collapse: separate;
 }
+
+tr:nth-child(3n-1){ background-color: rgba(255, 204, 204, .3); }
+
+tr:nth-child(3n+0){ background-color: rgba(204, 204, 255, .3); }
+
+tr:nth-child(3n+1){ background-color: rgba(204, 255, 204, .3); }
