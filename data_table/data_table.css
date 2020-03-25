@@ -22,7 +22,7 @@ nav a {
 
 div {
   margin: 40px;
-    display: flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
