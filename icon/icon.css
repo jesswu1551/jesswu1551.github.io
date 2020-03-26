@@ -61,6 +61,7 @@ section {
 .icon-top:hover {
   color: #fff;
   background-color: #007bff;
+  cursor: pointer;
 }
 
 .icon-text {
@@ -75,10 +76,10 @@ section {
 }
 
 #home-btn {
-display: block;
-margin: auto;
-margin-bottom: 40px;
-width: 100px;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 100px;
 }
 
 #home-btn:link, #home-btn:visited {
