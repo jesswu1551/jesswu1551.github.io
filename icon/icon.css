@@ -28,6 +28,7 @@ nav a { text-decoration: none; }
 section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
   width: 80%;
   margin: 40px auto;
@@ -74,10 +75,8 @@ section {
 }
 
 #home-btn {
-position: relative;
-top: 50%;
-left: 50%;
 display: block;
+margin: auto;
 width: 100px;
 }
 
