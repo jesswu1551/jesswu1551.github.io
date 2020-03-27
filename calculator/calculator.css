@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+header {
+  padding: 6px;
+  letter-spacing: 2px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+a:link { color: #007bff; }
+
+a:visited { color: #541BC4; }
+
+a:hover { color: #0056b3; }
+
+nav a { text-decoration: none; }
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.calculator-display {
+  width: 100%;
+  height: 140px;
+  padding:60px 30px 0 0 ;
+  font-size: 60px;
+  color: #f3f3f3;
+  text-align: right;
+  background-color: #252525;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.calculator-key {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 1px;
+  background-color: #d2d2d2;
+}
+
+button {
+  height: 80px;
+  font-size: 20px;
+  background-color: #e7e7e7;
+  border: none;
+}
+
+button:hover {
+  background-color: #d7d7d7;
+  cursor: pointer;
+}
+
+.multiplication {
+  grid-column: 4 / 5 ;
+  grid-row: 2 / 3;
+}
+
+.subtraction {
+  grid-column: 4 / 5 ;
+  grid-row: 3 / 4;
+}
+
+.addition {
+  grid-column: 4 / 5 ;
+  grid-row: 4 / 5;
+}
+
+.equal {
+  grid-area: 5 / 3 / 6 / 5;
+  height: 100%;
+  color: #fff;
+  background-color: #ff9f00;
+}
+
+.equal:hover {
+  background-color: #f39600;
+}
+
+.operator{
+  color: #a3a3a3;
+  background-color: #f3f3f3;
+}
