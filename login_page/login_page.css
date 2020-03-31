@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -29,14 +27,16 @@ nav a { text-decoration: none; }
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-200px,-200px);
+  transform: translate(-200px, -200px);
   margin: auto;
 }
 
+/* tab style : sign in & register */
 .tabset {
   width: 400px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+
 }
 
 .tabset > input[type="radio"] {
@@ -49,10 +49,10 @@ nav a { text-decoration: none; }
   padding: 15px;
   margin: 0;
   width: 50%;
-  text-align: center;
   font-size: 16px;
   border-bottom: 1px solid #e5e5e5;
   background-color: #fafafa;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -63,13 +63,9 @@ nav a { text-decoration: none; }
 
 .tabset > input:checked + label {
   color: #000;
-  border-bottom: 2px solid #6666c4;
   font-weight: bold;
+  border-bottom: 2px solid #6666c4;
   background-color: #fff;
-}
-
-.tab-panels {
-  padding-top: 80px;
 }
 
 .tabset > label:first-of-type {
@@ -79,6 +75,11 @@ nav a { text-decoration: none; }
 
 .tabset > label:last-of-type {
   border-top-right-radius: 4px;
+}
+
+/* form content */
+.tab-panels {
+  padding-top: 80px;
 }
 
 .tabset .tab-panel {
@@ -139,10 +140,10 @@ input[type=checkbox] {
 input[type=checkbox]:after {
   content: "";
   display: inline-block;
-  visibility: visible;
-  padding-left: 3px;
   width: 12px;
   height: 16px;
+  padding-left: 3px;
+  visibility: visible;
   color: #0056b3;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
@@ -153,22 +154,29 @@ input[type=checkbox]:checked:after {
   font-weight: bold;
 }
 
-.input-icon input {
-  font-family: FontAwesome, sans-serif;
+/* icons inside input */
+.password-icons .password-icon {
+  position: absolute;
+  top: 178px;
+  right: 26px;
 }
 
-::-webkit-input-placeholder {
-  direction: rtl;
+.username-icons .username-icon {
+  position: absolute;
+  top: 110px;
+  right: 26px;
 }
+
+/* ::-webkit-input-placeholder {
+  direction: rtl;
+} */
 
 .forgot {
   float: left;
   width: 50%;
 }
 
-.forgot > label:hover {
-  cursor: pointer;
-}
+.forgot > label:hover { cursor: pointer; }
 
 .forgot-psword > a {
   float: right;
@@ -176,13 +184,9 @@ input[type=checkbox]:checked:after {
   text-decoration: none;
 }
 
-.forgot-psword:hover > a {
-  text-decoration: underline;
-}
+.forgot-psword:hover > a { text-decoration: underline; }
 
-.home-btn {
-  text-align: center;
-}
+.home-btn { text-align: center; }
 
 #home-btn {
   width: 100px;
