@@ -32,6 +32,9 @@ nav a { text-decoration: none; }
   left: 50%;
   transform: translate(-200px,-200px);
   margin: auto;
+}
+
+.tabset {
   width: 400px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -173,3 +176,24 @@ input[type=checkbox]:checked:after {
 .forgot-psword:hover > a {
   text-decoration: underline;
 }
+
+.home-btn {
+  text-align: center;
+}
+
+#home-btn {
+  width: 100px;
+  margin-top: 40px;
+}
+
+#home-btn:link, #home-btn:visited {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #007bff;
+  opacity: .85;
+}
+
+#home-btn:hover { background-color: #0056b3; }

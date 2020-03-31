@@ -26,50 +26,58 @@
   <!-- End Header -->
 
   <div class="login-container">
-    <!-- tab-->
-    <div class="tabset">
-      <input type="radio" name="tabset" id="tab1" checked>
-      <label for="tab1">Sign in</label>
-      <input type="radio" name="tabset" id="tab2">
-      <label for="tab2">Register</label>
+    <div>
+      <!-- tab-->
+      <div class="tabset">
+        <input type="radio" name="tabset" id="tab1" checked>
+        <label for="tab1">Sign in</label>
+        <input type="radio" name="tabset" id="tab2">
+        <label for="tab2">Register</label>
 
-      <div class="tab-panels">
-        <section id="signin" class="tab-panel">
-          <form>
-            <label>Username or email</label>
-            <input type="text" title="This field is required.">
-            <label>Password</label>
-            <input type="password" title="This field is required.">
-            <div style="margin: 20px 0;">
-              <div class="forgot">
-                <input type="checkbox" id="check-remember">
-                <label for="check-remember">Remember me</label>
+        <div class="tab-panels">
+          <section id="signin" class="tab-panel">
+            <form>
+              <label>Username or email</label>
+              <input type="text" title="This field is required.">
+              <label>Password</label>
+              <input type="password" title="This field is required.">
+              <div style="margin: 20px 0;">
+                <div class="forgot">
+                  <input type="checkbox" id="check-remember">
+                  <label for="check-remember">Remember me</label>
+                </div>
+                <div class="forgot forgot-psword">
+                  <a href="#">Forgot your password?</a>
+                </div>
               </div>
-              <div class="forgot forgot-psword">
-                <a href="#">Forgot your password?</a>
-              </div>
-            </div>
-            <input type="submit" value="Sign in">
-          </form>
-        </section>
-        <section id="register" class="tab-panel">
-          <form>
-            <label>Full name</label>
-            <input type="text" title="This field is required.">
-            <label>Username</label>
-            <input type="text" title="Please create a username with only alphanumeric characters.">
-            <label>Email</label>
-            <input type="email" title="Please provide a valid email address.">
-            <label>Email confirmation</label>
-            <input type="email" title="Please retype the email address.">
-            <label>Password</label>
-            <input type="password" style="margin-bottom: 4px;" title="Please create a username with only alphanumeric characters.">
-            <label>Minimum length is 8 characters</label>
-            <input type="submit" value="Register">
-          </form>
-        </section>
+              <input type="submit" value="Sign in">
+            </form>
+          </section>
+          <section id="register" class="tab-panel">
+            <form>
+              <label>Full name</label>
+              <input type="text" title="This field is required.">
+              <label>Username</label>
+              <input type="text" title="Please create a username with only alphanumeric characters.">
+              <label>Email</label>
+              <input type="email" title="Please provide a valid email address.">
+              <label>Email confirmation</label>
+              <input type="email" title="Please retype the email address.">
+              <label>Password</label>
+              <input type="password" style="margin-bottom: 4px;" title="Please create a username with only alphanumeric characters.">
+              <label>Minimum length is 8 characters</label>
+              <input type="submit" value="Register">
+            </form>
+          </section>
+        </div>
       </div>
     </div>
+
+    <!-- home btn -->
+    <div class="home-btn">
+      <a id="home-btn" href="../index.html">❮ Home</a>
+    </div>
+
   </div>
 
 </body>
