@@ -25,7 +25,6 @@ a:hover { color: #0056b3; }
 
 nav a { text-decoration: none; }
 
-
 .login-container {
   position: absolute;
   top: 50%;
@@ -57,12 +56,10 @@ nav a { text-decoration: none; }
   cursor: pointer;
 }
 
-
 .tabset > label:hover {
   color: #000;
   border-bottom: 2px solid #b6b6b6;
 }
-
 
 .tabset > input:checked + label {
   color: #000;
@@ -97,7 +94,6 @@ form {
   padding: 0 12px 12px;
   font-size: 13px;
 }
-
 
 input[type="text"], input[type="password"], input[type="email"] {
   display: inline-block;
@@ -140,7 +136,6 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-
 input[type=checkbox]:after {
   content: "";
   display: inline-block;
@@ -156,6 +151,14 @@ input[type=checkbox]:after {
 input[type=checkbox]:checked:after {
   content: "\2713";
   font-weight: bold;
+}
+
+.input-icon input {
+  font-family: FontAwesome, sans-serif;
+}
+
+::-webkit-input-placeholder {
+  direction: rtl;
 }
 
 .forgot {
