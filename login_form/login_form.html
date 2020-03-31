@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Practice">
+  <meta name="keywords" content="HTML,SCSS,CSS,JS,jQUERY">
+  <meta name="author" content="Jess Wu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Practice | Icons</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="login_form.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Start Header -->
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mailto:jiayu1551@gmail.com">Contact</a>
+      <a href="https://github.com/jesswu1551">GitHub</a>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <div class="login-container">
+    <!-- tab-->
+    <div class="tabset">
+      <input type="radio" name="tabset" id="tab1" checked>
+      <label for="tab1">Sign in</label>
+      <input type="radio" name="tabset" id="tab2">
+      <label for="tab2">Register</label>
+
+      <div class="tab-panels">
+        <section id="signin" class="tab-panel">
+          <form>
+            <label>Username or email</label>
+            <input type="text" title="This field is required.">
+            <label>Password</label>
+            <input type="password" title="This field is required.">
+            <div style="margin: 20px 0;">
+              <div class="forgot">
+                <input type="checkbox" id="check-remember">
+                <label for="check-remember">Remember me</label>
+              </div>
+              <div class="forgot forgot-psword">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+            <input type="submit" value="Sign in">
+          </form>
+        </section>
+        <section id="register" class="tab-panel">
+          <form>
+            <label>Full name</label>
+            <input type="text" title="This field is required.">
+            <label>Username</label>
+            <input type="text" title="Please create a username with only alphanumeric characters.">
+            <label>Email</label>
+            <input type="email" title="Please provide a valid email address.">
+            <label>Email confirmation</label>
+            <input type="email" title="Please retype the email address.">
+            <label>Password</label>
+            <input type="password" style="margin-bottom: 4px;" title="Please create a username with only alphanumeric characters.">
+            <label>Minimum length is 8 characters</label>
+            <input type="submit" value="Register">
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
