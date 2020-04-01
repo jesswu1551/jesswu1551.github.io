@@ -1,0 +1,154 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei";
+  color: #555;
+}
+
+header {
+  padding: 6px;
+  letter-spacing: 2px;
+  text-align: right;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+a:link { color: #007bff; }
+
+a:visited { color: #541BC4; }
+
+a:hover { color: #0056b3; }
+
+nav a { text-decoration: none; }
+
+.wizard-content {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.tab-items {
+  padding: 0;
+  margin: 0;
+}
+
+.tab-items > li {
+  display: inline-block;
+  margin-right: 2px;
+  width: 140px;
+  font-size: 40px;
+  color: #d3d3d3;
+  list-style-type: none;
+}
+
+li > span {
+  position: absolute;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+hr {
+  margin: 0;
+  border: 2px solid #d3d3d3;
+  transform: skew(45deg);
+}
+
+/* tab-item active style */
+.tab-items > .active {
+  font-size: 60px;
+  color: #bd1425;
+}
+
+.active > hr {
+  border: 2px solid #bd1425;
+  transform: skew(45deg);
+}
+
+.order-content {
+  margin-top: 50px;
+}
+
+.title-info {
+  font-size: 18px;
+}
+
+.title-info > span {
+  padding-left: 8px;
+  font-size: 16px;
+  color: #b5b5b5;
+}
+
+.form-group {
+  padding: 20px 0 20px 0;
+}
+
+.form-group > label {
+  font-size: 16px;
+}
+
+.form-group:first-child, .form-group:nth-child(3) {
+  clear: both;
+  float: left;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.form-group:nth-child(2), .form-group:nth-child(4) {
+  float: right;
+  width: 50%;
+  padding-left: 40px;
+}
+
+.form-required::before {
+  content: "*";
+  color: #bd1425;
+}
+
+input {
+  width: 100%;
+  padding: 12px 0 4px 0;
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-family: Arial, "Microsoft JhengHei";
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #bd1425;
+}
+
+::placeholder {
+  color: #b5b5b5;
+}
+
+.order-btn {
+  float: right;
+  margin-top: 40px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #bd1425;
+  border: none;
+  border-radius: 50px;
+}
+
+button::after {
+  content: "\f061";
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 50px;
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+}
+
+button:hover {
+  opacity: .85;
+  cursor: pointer;
+}
