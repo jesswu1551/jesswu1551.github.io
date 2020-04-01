@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Practice">
+  <meta name="keywords" content="HTML,SCSS,CSS,JS,jQUERY">
+  <meta name="author" content="Jess Wu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Practice | Wizard Page</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="wizard_page.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Start Header -->
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mailto:jiayu1551@gmail.com">Contact</a>
+      <a href="https://github.com/jesswu1551">GitHub</a>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <div class="wizard-content">
+    <ul class="tab-items">
+      <li class="active"><b>01</b><hr><span>寄件人信息</span></li>
+      <li>02<hr><span>收件人信息</span></li>
+      <li>03<hr><span>預約信息</span></li>
+      <li>04<hr><span>完成下單</span></li>
+    </ul>
+    <div class="order-content">
+      <div class="title-info">
+        寄方信息<span>標* 為必填項</span>
+      </div>
+      <form>
+        <div class="form-group form-required">
+          <label>姓名</label>
+          <input type="text" placeholder="請填寫聯繫人姓名">
+        </div>
+        <div class="form-group">
+          <label>公司名稱</label>
+          <input type="text" placeholder="請填寫公司名稱">
+        </div>
+        <div class="form-group">
+          <label>手機號碼</label>
+          <input type="text" placeholder="請填寫手機號碼">
+        </div>
+        <div class="form-group">
+          <label>市話電話</label>
+          <input type="text" placeholder="請填寫市話電話">
+        </div>
+        <div class="form-group form-required" style="clear: both;">
+          <label>縣市區</label>
+          <input type="text" placeholder="請選擇所在地區，例如：臺北市-大同區">
+        </div>
+        <div class="form-group form-required">
+          <label>詳細地址</label>
+          <input type="text" placeholder="請填寫所在街道以及詳細地址">
+        </div>
+        <div class="form-group">
+          <label>統一編號或身分證字號(出口件必須填寫)</label>
+          <input type="text" placeholder="公司請填寫統一編號，個人請填寫身份證字號">
+        </div>
+      </form>
+      <div class="order-btn">
+        <button>下一步</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
