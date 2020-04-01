@@ -23,7 +23,7 @@ nav a { text-decoration: none; }
 
 .wizard-content {
   width: 60%;
-  margin: 40px auto;
+  margin: 80px auto;
 }
 
 .tab-items {
@@ -125,6 +125,7 @@ input:focus {
 .order-btn {
   float: right;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 button {
@@ -137,6 +138,7 @@ button {
   background-color: #bd1425;
   border: none;
   border-radius: 50px;
+  outline: none;
 }
 
 button::after {
@@ -149,6 +151,6 @@ button::after {
 }
 
 button:hover {
-  opacity: .85;
+  opacity: .9;
   cursor: pointer;
 }
