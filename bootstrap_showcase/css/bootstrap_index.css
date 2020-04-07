@@ -29,15 +29,15 @@ nav a { text-decoration: none; }
   font-weight: 600;
 }
 
-.bd-sidebar .nav>li>a {
+.bd-sidebar .nav > li > a {
   display: block;
   padding: .25rem 1.5rem;
   color: rgba(0,0,0,.65);
 }
 
-.bd-sidebar .nav>.active>a {
+.bd-sidebar .nav > .active>a {
   font-weight: 600;
-  color: rgba(0,0,0,.85);
+  color: rgba(0, 0, 0, .85);
   background-color: transparent;
 }
 
@@ -45,4 +45,9 @@ nav a { text-decoration: none; }
   position: relative;
   padding: 1rem;
   margin: 1rem -15px 0;
+}
+
+.bd-example > h5 ~ .dropdown-menu {
+  position: static;
+  display: block;
 }
