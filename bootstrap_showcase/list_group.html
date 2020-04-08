@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -30,6 +30,7 @@
 
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -110,7 +111,7 @@
         <h1>List group</h1>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
+          <h3>Examples</h3>
           <ul class="list-group">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -121,7 +122,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Active and disabled</h3>
+          <h3>Active and disabled</h3>
           <div class="d-flex">
             <ul class="list-group mr-3" style="width: 18rem;">
               <li class="list-group-item active">Cras justo odio</li>
@@ -141,32 +142,32 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Link and button</h3>
+          <h3>Link and button</h3>
           <div class="d-flex">
             <div class="list-group mr-3" style="width: 18rem;">
-              <a href="#" class="list-group-item list-group-item-action active">
+              <a class="list-group-item list-group-item-action active" href="#">
                 Cras justo odio
               </a>
-              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at
+              <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+              <a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a>
+              <a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a>
+              <a class="list-group-item list-group-item-action disabled" href="#" tabindex="-1" aria-disabled="true">Vestibulum at
                 eros</a>
             </div>
             <div class="list-group" style="width: 18rem;">
-              <button type="button" class="list-group-item list-group-item-action active">
+              <button class="list-group-item list-group-item-action active" type="button">
                 Cras justo odio
               </button>
-              <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-              <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-              <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-              <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+              <button class="list-group-item list-group-item-action" type="button">Dapibus ac facilisis in</button>
+              <button class="list-group-item list-group-item-action" type="button">Morbi leo risus</button>
+              <button class="list-group-item list-group-item-action" type="button">Porta ac consectetur ac</button>
+              <button class="list-group-item list-group-item-action" type="button" disabled>Vestibulum at eros</button>
             </div>
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Flush</h3>
+          <h3>Flush</h3>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -177,7 +178,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Horizontal</h3>
+          <h3>Horizontal</h3>
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -186,7 +187,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Contextual class</h3>
+          <h3>Contextual class</h3>
           <ul class="list-group">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</li>
@@ -201,7 +202,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">With badge</h3>
+          <h3>With badge</h3>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">Cras justo odio
               <span class="badge badge-primary badge-pill">14</span>
@@ -216,9 +217,9 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal" id="custom-content">Custom content</h3>
+          <h3 id="custom-content">Custom content</h3>
           <div class="list-group">
-            <a href="#custom-content" class="list-group-item list-group-item-action active">
+            <a class="list-group-item list-group-item-action active" href="#custom-content">
               <div class="w-100 d-flex justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small>3 days ago</small>
@@ -226,7 +227,7 @@
               <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
               <small>Donec id elit non mi porta.</small>
             </a>
-            <a href="#custom-content" class="list-group-item list-group-item-action">
+            <a class="list-group-item list-group-item-action" href="#custom-content">
               <div class="w-100 d-flex justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small>3 days ago</small>
@@ -234,7 +235,7 @@
               <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
               <small>Donec id elit non mi porta.</small>
             </a>
-            <a href="#custom-content" class="list-group-item list-group-item-action">
+            <a class="list-group-item list-group-item-action" href="#custom-content">
               <div class="w-100 d-flex justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small>3 days ago</small>
@@ -246,7 +247,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">JavaScript behavior</h3>
+          <h3>JavaScript behavior</h3>
           <div class="row">
             <div class="col-4">
               <div class="list-group" id="list-tab" role="tablist">
@@ -284,21 +285,6 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
 

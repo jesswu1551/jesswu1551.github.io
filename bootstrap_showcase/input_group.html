@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -29,6 +29,7 @@
     <div class="row mt-4 mb-4">
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -109,40 +110,36 @@
         <h1>Input group</h1>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
+          <h3>Examples</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
           </div>
-
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username"
               aria-describedby="basic-addon2">
             <div class="input-group-append">
               <span class="input-group-text" id="basic-addon2">@example.com</span>
             </div>
           </div>
-
           <label for="basic-url">Your vanity URL</label>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
             </div>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            <input class="form-control" type="text" id="basic-url" aria-describedby="basic-addon3">
           </div>
-
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">$</span>
             </div>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)">
             <div class="input-group-append">
               <span class="input-group-text">.00</span>
             </div>
           </div>
-
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">With textarea</span>
@@ -152,48 +149,48 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Wrapping</h3>
+          <h3>Wrapping</h3>
           <div class="input-group flex-nowrap">
             <div class="input-group-prepend">
               <span class="input-group-text" id="addon-wrapping">@</span>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            <input class="form-control" type="text" placeholder="Username" aria-label="Username"
               aria-describedby="addon-wrapping">
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Sizing</h3>
+          <h3>Sizing</h3>
           <div class="input-group input-group-sm mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input"
+            <input class="form-control" type="text" aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group input-group-lg">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Checkbox and radio</h3>
+          <h3>Checkbox and radio</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <input type="checkbox" aria-label="Checkbox for following text input">
               </div>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with checkbox">
+            <input class="form-control" type="text" aria-label="Text input with checkbox">
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
@@ -201,32 +198,32 @@
                 <input type="radio" aria-label="Radio button for following text input">
               </div>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with radio button">
+            <input class="form-control" type="text" aria-label="Text input with radio button">
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Multiple input</h3>
+          <h3>Multiple input</h3>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">First and last name</span>
             </div>
-            <input type="text" aria-label="First name" class="form-control">
-            <input type="text" aria-label="Last name" class="form-control">
+            <input class="form-control" type="text" aria-label="First name">
+            <input class="form-control" type="text" aria-label="Last name">
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Multiple add-on</h3>
+          <h3>Multiple add-on</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">$</span>
               <span class="input-group-text">0.00</span>
             </div>
-            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
           </div>
           <div class="input-group">
-            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
             <div class="input-group-append">
               <span class="input-group-text">$</span>
               <span class="input-group-text">0.00</span>
@@ -235,7 +232,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Button add-on</h3>
+          <h3>Button add-on</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
@@ -243,7 +240,7 @@
             <input class="form-control" type="text" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username"
               aria-describedby="button-addon2">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
@@ -254,11 +251,11 @@
               <button class="btn btn-outline-secondary" type="button">Button</button>
               <button class="btn btn-outline-secondary" type="button">Button</button>
             </div>
-            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons"
+            <input class="form-control" type="text" placeholder="" aria-label="Example text with two button addons"
               aria-describedby="button-addon3">
           </div>
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Recipient's username"
+            <input class="form-control" type="text" placeholder="Recipient's username"
               aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
             <div class="input-group-append" id="button-addon4">
               <button class="btn btn-outline-secondary" type="button">Button</button>
@@ -268,7 +265,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Button with dropdown</h3>
+          <h3>Button with dropdown</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
@@ -277,15 +274,14 @@
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
+                <div class="dropdown-divider" role="separator"></div>
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <input class="form-control" type="text" aria-label="Text input with dropdown button">
           </div>
-
           <div class="input-group">
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <input class="form-control" type="text" aria-label="Text input with dropdown button">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">Dropdown</button>
@@ -293,7 +289,7 @@
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
+                <div class="dropdown-divider" role="separator"></div>
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </div>
@@ -301,11 +297,11 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Segmented button</h3>
+          <h3>Segmented button</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <button type="button" class="btn btn-outline-secondary">Action</button>
-              <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+              <button class="btn btn-outline-secondary" type="button">Action</button>
+              <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
@@ -313,18 +309,17 @@
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
+                <div class="dropdown-divider" role="separator"></div>
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
           </div>
-
           <div class="input-group">
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
             <div class="input-group-append">
-              <button type="button" class="btn btn-outline-secondary">Action</button>
-              <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+              <button class="btn btn-outline-secondary" type="button">Action</button>
+              <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
@@ -332,7 +327,7 @@
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
+                <div class="dropdown-divider" role="separator"></div>
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </div>
@@ -340,7 +335,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Custom form</h3>
+          <h3>Custom form</h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -391,34 +386,31 @@
               <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
             </div>
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <input class="custom-file-input" type="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
           </div>
-
           <div class="input-group mb-3">
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile02">
+              <input class="custom-file-input" type="file" id="inputGroupFile02">
               <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
             </div>
             <div class="input-group-append">
               <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
             </div>
           </div>
-
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
             </div>
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+              <input class="custom-file-input" type="file" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
               <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
             </div>
           </div>
-
           <div class="input-group">
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+              <input class="custom-file-input" type="file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
               <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
             </div>
             <div class="input-group-append">

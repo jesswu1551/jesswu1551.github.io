@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -29,6 +29,7 @@
     <div class="row mt-4 mb-4">
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item active">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -109,7 +110,7 @@
         <h1>Alerts</h1>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
+          <h3>Examples</h3>
           <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
           <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
           <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
@@ -121,19 +122,19 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Link Color</h3>
-          <div class="alert alert-primary" role="alert">A simple primary with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-secondary" role="alert">A simple secondary with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-success" role="alert">A simple success with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-danger" role="alert">A simple danger with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-warning" role="alert">A simple warning with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-info" role="alert">A simple info with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-light" role="alert">A simple light with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
-          <div class="alert alert-dark" role="alert">A simple dark with <a link="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+          <h3>Link Color</h3>
+          <div class="alert alert-primary" role="alert">A simple primary with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-secondary" role="alert">A simple secondary with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-success" role="alert">A simple success with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-danger" role="alert">A simple danger with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-warning" role="alert">A simple warning with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-info" role="alert">A simple info with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-light" role="alert">A simple light with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
+          <div class="alert alert-dark" role="alert">A simple dark with <a class="alert-link" link="#">an example link</a>. Give it a click if you like.</div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Additional content</h3>
+          <h3>Additional content</h3>
           <div class="alert alert-success" role="alert">
             <h4 class="alert-heading">Well done!</h4>
             <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
@@ -144,7 +145,7 @@
           </div>
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <button class="close" type="button" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>

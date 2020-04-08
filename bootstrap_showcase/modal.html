@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -29,6 +29,7 @@
     <div class="row mt-4 mb-4">
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -109,7 +110,7 @@
         <h1>Modal</h1>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Modal component</h3>
+          <h3>Modal component</h3>
           <div class="modal" tabindex="-1" role="dialog" style="display: contents;">
             <div class="modal-dialog" role="document" style="margin: 1.75rem 0;">
               <div class="modal-content">
@@ -132,7 +133,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
+          <h3>Examples</h3>
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal1">
             Launch demo modal</button>
           <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog">
@@ -157,7 +158,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Static backdrop</h3>
+          <h3>Static backdrop</h3>
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#staticBackdrop">
             Launch static backdrop modal</button>
           <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog">
@@ -182,7 +183,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Scrolling long content</h3>
+          <h3>Scrolling long content</h3>
           <button class="btn btn-primary mb-3" type="button" data-toggle="modal" data-target="#exampleModalLong">
             Launch demo modal</button>
           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog">
@@ -304,7 +305,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Vertically center</h3>
+          <h3>Vertically center</h3>
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter">
             Launch demo modal</button>
           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
@@ -329,7 +330,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Tooltip and popover</h3>
+          <h3 id="tolltip-popover">Tooltip and popover</h3>
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalTooltip">
             Launch demo modal</button>
           <div class="modal fade" id="exampleModalTooltip" tabindex="-1" role="dialog">
@@ -343,14 +344,12 @@
                 </div>
                 <div class="modal-body">
                   <h5>Popover in a modal</h5>
-                  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title=""
-                    data-content="Popover body content is set in this attribute." data-container="#exampleModalPopovers"
-                    data-original-title="Popover title">button</a> triggers a popover on click.</p>
+                  <p>This <a class="btn btn-secondary popover-test" href="#tolltip-popover" data-toggle="popover" role="button" title="Popover title"
+                      data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
                   <hr>
                   <h5>Tooltips in a modal</h5>
-                  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test"
-                      title="Tooltip">that link</a> have tooltips on hover.</p>
-
+                  <p><a class="tooltip-test" href="#" data-toggle="tooltip" title="Tooltip">This link</a> and
+                    <a class="tooltip-test" href="#" data-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -362,7 +361,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Using the grid</h3>
+          <h3>Using the grid</h3>
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalGrid">
             Launch demo modal</button>
           <div class="modal fade show" id="exampleModalGrid" tabindex="-1" aria-labelledby="gridModalLabel" aria-modal="true" role="dialog">
@@ -412,7 +411,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Varying modal content</h3>
+          <h3>Varying modal content</h3>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open
             modal for @mdo</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open
@@ -452,7 +451,7 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Sizing</h3>
+          <h3>Sizing</h3>
           <!-- Small modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small
             modal</button>
@@ -557,25 +556,23 @@
   </div>
 
   <script>
-    $(document).ready(function () {
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-        })
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-      });
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
 
-      $('#exampleModal').on('show.bs.modal', function (event) {
-          var button = $(event.relatedTarget) // Button that triggered the modal
-          var recipient = button.data('whatever') // Extract info from data-* attributes
-          // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-          // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-          var modal = $(this)
-          modal.find('.modal-title').text('New message to ' + recipient)
-          modal.find('.modal-body input').val(recipient)
-        })
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-title').text('New message to ' + recipient)
+      modal.find('.modal-body input').val(recipient)
+    })
   </script>
 
 </body>

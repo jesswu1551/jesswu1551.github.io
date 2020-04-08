@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -30,6 +30,7 @@
       <!-- Sidebar Bootstrap Components -->
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -110,22 +111,20 @@
       <div class="col-8">
         <h1>Card</h1>
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
+          <h3>Examples</h3>
           <div class="card" style="width: 18rem;">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
             </div>
           </div>
         </div>
 
       <div class="bd-example">
-        <h3 class="font-weight-normal">List group</h3>
+        <h3>List group</h3>
         <div class="d-flex">
           <div class="card mr-3" style="width: 18rem;align-self: flex-start">
             <ul class="list-group list-group-flush">
@@ -148,9 +147,7 @@
 
       <div class="bd-example">
         <div class="card" style="width: 18rem;">
-          <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-            <img src="" class="card-img-top" alt="...">
-          </div>
+          <img class="card-img-top" src="image/bg-gradient.svg" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -162,15 +159,15 @@
             <li class="list-group-item">Vestibulum at eros</li>
           </ul>
           <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <a class="card-link" href="#">Card link</a>
+            <a class="card-link" href="#">Another link</a>
           </div>
         </div>
       </div>
 
       <!-- Header and Footer add header add/or footer within a card-->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Header and footer</h3>
+        <h3>Header and footer</h3>
         <div class="card mb-3 mr-3">
           <div class="card-header">
             Featured
@@ -178,7 +175,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
           </div>
         </div>
 
@@ -187,7 +184,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
           </div>
         </div>
 
@@ -210,7 +207,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
           </div>
           <div class="card-footer text-muted">
             2 days ago
@@ -220,14 +217,14 @@
 
       <!-- Can use col-xx-n or w-75/w-50.. set width -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Sizing</h3>
+        <h3>Sizing</h3>
         <div class="row">
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -236,7 +233,7 @@
               <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -245,34 +242,34 @@
 
       <!--Text alignment change the text alignment of any card -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Text alignment</h3>
+        <h3>Text alignment</h3>
         <div class="d-flex">
           <div class="card mr-3" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
             </div>
           </div>
           <div class="card text-center mr-3" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
             </div>
           </div>
           <div class="card text-right" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
             </div>
           </div>
           </div>
         </div>
 
       <div class="bd-example">
-        <h3 class="font-weight-normal">Text alignment</h3>
+        <h3>Navigation</h3>
         <div class="card text-center mb-3">
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
@@ -290,7 +287,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
           </div>
         </div>
 
@@ -311,17 +308,15 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
           </div>
         </div>
       </div>
 
       <div class="bd-example">
-        <h3 class="font-weight-normal">Image overlays</h3>
+        <h3>Image overlays</h3>
         <div class="card bg-dark text-white" style="border: none;">
-          <div style="height: 270px;background-color:rgb(134, 142, 150);"">
-            <img class="card-img" alt="...">
-          </div>
+          <img class="card-img-top" height="270" src="image/bg-gradient.svg" alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -332,11 +327,11 @@
       </div>
 
       <div class="bd-example">
-        <h3 class="font-weight-normal">Horizontal</h3>
+        <h3>Horizontal</h3>
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row no-gutters">
-            <div class="col-md-4" style="background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img" alt="...">
+            <div class="col-md-4">
+              <img class="card-img-top" height="250" src="image/bg-gradient.svg" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -352,7 +347,7 @@
 
       <!-- Card style set card background and color -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Card style</h3>
+        <h3>Card style</h3>
         <div class="d-flex">
           <div class="card text-white bg-primary mb-3 mr-3" style="max-width: 18rem;">
             <div class="card-header">Header</div>
@@ -425,7 +420,7 @@
 
       <!-- Border set border-color of a card -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Border</h3>
+        <h3>Border</h3>
         <div class="d-flex">
           <div class="card border-primary mb-3 mr-3" style="max-width: 18rem;">
             <div class="card-header">Header</div>
@@ -505,7 +500,7 @@
       </div>
 
       <div class="bd-example">
-        <h3 class="font-weight-normal">Mixins utilities</h3>
+        <h3>Mixins utilities</h3>
         <div class="card border-success mb-3" style="max-width: 18rem;">
           <div class="card-header bg-transparent border-success">Header</div>
           <div class="card-body text-success">
@@ -519,12 +514,10 @@
 
       <!-- Card group -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Card group</h3>
+        <h3>Card group</h3>
         <div class="card-group">
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -533,9 +526,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -543,9 +534,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -558,12 +547,10 @@
 
       <!-- card deck cards aren’t attached to one another -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Card deck</h3>
+        <h3>Card deck</h3>
         <div class="card-deck">
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
@@ -572,9 +559,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -582,9 +567,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -596,9 +579,7 @@
         <br>
         <div class="card-deck">
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -609,9 +590,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -621,9 +600,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -638,13 +615,11 @@
 
       <!-- grid card .row/cols split column or h-n set height-->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Grid card</h3>
+        <h3>Grid card</h3>
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
             <div class="card">
-              <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-                <img src="" class="card-img-top" alt="...">
-              </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -654,9 +629,7 @@
           </div>
           <div class="col mb-4">
             <div class="card">
-              <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-                <img src="" class="card-img-top" alt="...">
-              </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -666,9 +639,7 @@
           </div>
           <div class="col mb-4">
             <div class="card">
-              <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-                <img src="" class="card-img-top" alt="...">
-              </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -678,9 +649,7 @@
           </div>
           <div class="col mb-4">
             <div class="card">
-              <div style="width: 100%;height: 180px;background-color:rgb(134, 142, 150);">
-                <img src="" class="card-img-top" alt="...">
-              </div>
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -693,12 +662,10 @@
 
       <!-- image grid-like column -->
       <div class="bd-example">
-        <h3 class="font-weight-normal">Card column</h3>
+        <h3>Card column</h3>
         <div class="card-columns">
           <div class="card">
-            <div style="width: 100%;height: 160px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="160" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
             <h5 class="card-title">Card title that wraps to a new line</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
@@ -716,9 +683,7 @@
             </blockquote>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 160px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="160" src="image/bg-gradient.svg" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -743,9 +708,7 @@
             </div>
           </div>
           <div class="card">
-            <div style="width: 100%;height: 260px;background-color:rgb(134, 142, 150);">
-              <img src="" class="card-img-top" alt="...">
-            </div>
+            <img class="card-img-top" height="260" src="image/bg-gradient.svg" alt="...">
           </div>
           <div class="card p-3 text-right">
             <blockquote class="blockquote mb-0">

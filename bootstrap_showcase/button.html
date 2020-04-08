@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap_index.css">
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -29,6 +29,7 @@
     <div class="row mt-4 mb-4">
       <div class="col-2 bd-sidebar">
         <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
           <div class="bd-toc">Components</div>
           <li class="nav-item">
             <a class="nav-link" href="bootstrap_index.html">Alerts</a>
@@ -109,20 +110,20 @@
         <h1>Button</h1>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Examples</h3>
-          <button type="button" class="btn btn-primary">Pirmary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-light">Light</button>
-          <button type="button" class="btn btn-dark">Dark</button>
-          <button type="button" class="btn btn-link">Link</button>
+          <h3>Examples</h3>
+          <button class="btn btn-primary" type="button">Pirmary</button>
+          <button class="btn btn-secondary" type="button">Secondary</button>
+          <button class="btn btn-success" type="button">Success</button>
+          <button class="btn btn-danger" type="button">Danger</button>
+          <button class="btn btn-warning" type="button">Warning</button>
+          <button class="btn btn-info" type="button">Info</button>
+          <button class="btn btn-light" type="button">Light</button>
+          <button class="btn btn-dark" type="button">Dark</button>
+          <button class="btn btn-link" type="button">Link</button>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Button tags</h3>
+          <h3>Button tags</h3>
           <a class="btn btn-primary" href="#" role="button">Link</a>
           <button class="btn btn-primary" type="submit">Button</button>
           <input class="btn btn-primary" type="button" value="Input">
@@ -131,53 +132,53 @@
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Outline button</h3>
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <button type="button" class="btn btn-outline-secondary">Secondary</button>
-          <button type="button" class="btn btn-outline-success">Success</button>
-          <button type="button" class="btn btn-outline-danger">Danger</button>
-          <button type="button" class="btn btn-outline-warning">Warning</button>
-          <button type="button" class="btn btn-outline-info">Info</button>
-          <button type="button" class="btn btn-outline-light">Light</button>
-          <button type="button" class="btn btn-outline-dark">Dark</button>
+          <h3>Outline button</h3>
+          <button class="btn btn-outline-primary" type="button">Primary</button>
+          <button class="btn btn-outline-secondary" type="button">Secondary</button>
+          <button class="btn btn-outline-success" type="button">Success</button>
+          <button class="btn btn-outline-danger" type="button">Danger</button>
+          <button class="btn btn-outline-warning" type="button">Warning</button>
+          <button class="btn btn-outline-info" type="button">Info</button>
+          <button class="btn btn-outline-light" type="button">Light</button>
+          <button class="btn btn-outline-dark" type="button">Dark</button>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Size</h3>
+          <h3>Size</h3>
           <div>
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <button class="btn btn-primary btn-lg" type="button">Large button</button>
+            <button class="btn btn-secondary btn-lg" type="button">Large button</button>
           </div>
           <div class="mt-2">
-            <button type="button" class="btn btn-primary btn-sm">Small button</button>
-            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+            <button class="btn btn-primary btn-sm" type="button">Small button</button>
+            <button class="btn btn-secondary btn-sm" type="button">Small button</button>
           </div>
           <div class="mt-2">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+            <button class="btn btn-primary btn-lg btn-block" type="button">Block level button</button>
+            <button class="btn btn-secondary btn-lg btn-block" type="button">Block level button</button>
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Active state</h3>
-          <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-          <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+          <h3>Active state</h3>
+          <a class="btn btn-primary btn-lg active" href="#" role="button" aria-pressed="true">Primary link</a>
+          <a class="btn btn-secondary btn-lg active" href="#" role="button" aria-pressed="true">Link</a>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Disabled state</h3>
+          <h3>Disabled state</h3>
           <div class="mt-2">
-            <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
-            <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+            <button class="btn btn-lg btn-primary" type="button" disabled>Primary button</button>
+            <button class="btn btn-secondary btn-lg" type="button" disabled>Button</button>
           </div>
           <div class="mt-2">
-            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+            <a class="btn btn-primary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+            <a class="btn btn-secondary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Link</a>
           </div>
         </div>
 
         <div class="bd-example">
-          <h3 class="font-weight-normal">Checkbox and radio button</h3>
+          <h3>Checkbox and radio button</h3>
           <div class="btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
               <input type="checkbox" checked> Checked
