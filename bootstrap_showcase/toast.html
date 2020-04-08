@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Practice">
+  <meta name="keywords" content="HTML,SCSS,CSS,JS,jQUERY">
+  <meta name="author" content="Jess Wu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Practice | Bootstrap Toast</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap_index.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mailto:jiayu1551@gmail.com">Contact</a>
+      <a href="https://github.com/jesswu1551">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row mt-4 mb-4">
+      <div class="col-2 bd-sidebar">
+        <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
+          <div class="bd-toc">Components</div>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap_index.html">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="badge.html">Badge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button.html">Button</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button_group.html">Button group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="card.html">Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collapse.html">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dropdown.html">Dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="input_group.html">Input group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jumbotron.html">Jumbotron</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list_group.html">List group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media_object.html">Media object</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modal.html">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navs.html">Navs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navbar.html">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagination.html">Pagination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popover.html">Popover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progress.html">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scrollspy.html">Scrollspy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spinner.html">Spinner</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="toast.html">Toast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tooltip.html">Tooltip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-8">
+        <h1>Toast</h1>
+
+        <h3 class="mt-3">Examples</h3>
+        <div class="bd-example bg-light">
+          <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img class="rounded mr-2" width="20" height="20" src="image/bg-gradient.svg" alt="...">
+              <strong class="mr-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-3">Stacking</h3>
+        <div class="bd-example bg-light">
+          <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img class="rounded mr-2" width="20" height="20" src="image/bg-gradient.svg" alt="...">
+              <strong class="mr-auto">Bootstrap</strong>
+              <small class="text-muted">just now</small>
+              <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              See? Just like this.
+            </div>
+          </div>
+
+          <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img class="rounded mr-2" width="20" height="20" src="image/bg-gradient.svg" alt="...">
+              <strong class="mr-auto">Bootstrap</strong>
+              <small class="text-muted">2 seconds ago</small>
+              <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              Heads up, toasts will stack automatically
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-3">Placement</h3>
+        <div class="bd-example bg-light">
+          <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+            <div class="toast fade show" style="position: absolute; top: 0; right: 0;">
+              <div class="toast-header">
+                <img class="rounded mr-2" width="20" height="20" src="image/bg-gradient.svg" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bd-example bg-light">
+          <!-- Flexbox container for aligning the toasts -->
+          <div class="d-flex justify-content-center align-items-center" aria-live="polite" aria-atomic="true"
+            style="min-height: 200px;">
+            <!-- Then put toasts within -->
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img class="rounded mr-2" width="20" height="20" src="image/bg-gradient.svg" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+
+
+</body>
+
+<script>
+  $(function () {
+    $('.toast').toast()
+  })
+</script>
+
+</html>

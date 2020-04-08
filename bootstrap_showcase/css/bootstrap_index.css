@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 6px;
+  z-index: 1;
+  letter-spacing: 2px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+nav > a:link { color: #007bff; }
+
+nav > a:visited { color: #541BC4; }
+
+nav > a:hover { color: #0056b3; }
+
+nav a { text-decoration: none; }
+
+.bd-toc {
+  padding: .25rem 1.5rem;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.bd-toc-link {
+  display: block;
+  font-weight: 600;
+  color: #000;
+}
+
+.bd-toc-link:hover {
+  text-decoration: none;
+}
+
+.bd-sidebar .nav > li > a {
+  display: block;
+  padding: .25rem 1.5rem;
+  color: rgba(0,0,0,.65);
+}
+
+.bd-sidebar .nav > .active>a {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .85);
+  background-color: transparent;
+}
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -15px 0;
+}
+
+.bd-example > h5 ~ .dropdown-menu {
+  position: static;
+  display: block;
+}
+
+.bd-example-row .row > [class^=col-] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.bd-example-row .row + .row {
+  margin-top: 1rem;
+}
+
+.bd-example-tabs .nav-tabs {
+  margin-bottom: 1rem;
+}
+
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: .5rem;
+  overflow: auto;
+}
+
+.scrollspy-example-2 {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+

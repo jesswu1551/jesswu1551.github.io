@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Practice">
+  <meta name="keywords" content="HTML,SCSS,CSS,JS,jQUERY">
+  <meta name="author" content="Jess Wu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Practice | Bootstrap Card</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap_index.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mailto:jiayu1551@gmail.com">Contact</a>
+      <a href="https://github.com/jesswu1551">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row mt-4 mb-4">
+      <!-- Sidebar Bootstrap Components -->
+      <div class="col-2 bd-sidebar">
+        <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
+          <div class="bd-toc">Components</div>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap_index.html">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="badge.html">Badge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button.html">Button</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button_group.html">Button group</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="card.html">Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collapse.html">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dropdown.html">Dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="input_group.html">Input group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jumbotron.html">Jumbotron</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list_group.html">List group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media_object.html">Media object</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modal.html">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navs.html">Navs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navbar.html">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagination.html">Pagination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popover.html">Popover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progress.html">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scrollspy.html">Scrollspy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spinner.html">Spinner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="toast.html">Toast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tooltip.html">Tooltip</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Secion Components Showcase-->
+      <div class="col-8">
+        <h1>Card</h1>
+        <div class="bd-example">
+          <h3>Examples</h3>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="bd-example">
+        <h3>List group</h3>
+        <div class="d-flex">
+          <div class="card mr-3" style="width: 18rem;align-self: flex-start">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          <br>
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">Featured</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bd-example">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="image/bg-gradient.svg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a class="card-link" href="#">Card link</a>
+            <a class="card-link" href="#">Another link</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header and Footer add header add/or footer within a card-->
+      <div class="bd-example">
+        <h3>Header and footer</h3>
+        <div class="card mb-3 mr-3">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <h5 class="card-header">Featured</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="card text-center mb-3">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+
+      <!-- Can use col-xx-n or w-75/w-50.. set width -->
+      <div class="bd-example">
+        <h3>Sizing</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Text alignment change the text alignment of any card -->
+      <div class="bd-example">
+        <h3>Text alignment</h3>
+        <div class="d-flex">
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center mr-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-right" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      <div class="bd-example">
+        <h3>Navigation</h3>
+        <div class="card text-center mb-3">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card text-center mb-3">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bd-example">
+        <h3>Image overlays</h3>
+        <div class="card bg-dark text-white" style="border: none;">
+          <img class="card-img-top" height="270" src="image/bg-gradient.svg" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+              This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bd-example">
+        <h3>Horizontal</h3>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img class="card-img-top" height="250" src="image/bg-gradient.svg" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                  This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card style set card background and color -->
+      <div class="bd-example">
+        <h3>Card style</h3>
+        <div class="d-flex">
+          <div class="card text-white bg-primary mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-success mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-danger mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="card text-white bg-warning mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-info mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-light mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-dark mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- Border set border-color of a card -->
+      <div class="bd-example">
+        <h3>Border</h3>
+        <div class="d-flex">
+          <div class="card border-primary mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-secondary mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-success mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-danger mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="card border-warning mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-info mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card border-dark mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bd-example">
+        <h3>Mixins utilities</h3>
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-success">Header</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-success">Footer</div>
+        </div>
+      </div>
+
+      <!-- Card group -->
+      <div class="bd-example">
+        <h3>Card group</h3>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card deck cards aren’t attached to one another -->
+      <div class="bd-example">
+        <h3>Card deck</h3>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
+                This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- grid card .row/cols split column or h-n set height-->
+      <div class="bd-example">
+        <h3>Grid card</h3>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+            <img class="card-img-top" height="180" src="image/bg-gradient.svg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- image grid-like column -->
+      <div class="bd-example">
+        <h3>Card column</h3>
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" height="160" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
+                                 This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="160" src="image/bg-gradient.svg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card bg-primary text-white text-center p-3">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <footer class="blockquote-footer text-white">
+                <small>
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" height="260" src="image/bg-gradient.svg" alt="...">
+          </div>
+          <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is another card with title and supporting text below. This card has some additional
+                content to make it slightly taller overall.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+</body>
+</html>
