@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -13,13 +15,18 @@ nav {
   border-bottom: 1px solid #d3d3d3;
 }
 
-a:link { color: #007bff; }
+nav a {
+  color: #007bff;
+  text-decoration: none;
+}
 
-a:visited { color: #541BC4; }
+nav a:hover {
+  color: #0062cc;
+}
 
-a:hover { color: #0056b3; }
-
-nav a { text-decoration: none; }
+nav a:visited {
+  color: #6417ff;
+}
 
 .wizard-content {
   width: 60%;
@@ -40,25 +47,24 @@ nav a { text-decoration: none; }
   list-style-type: none;
 }
 
-li > span {
+.tab-items > li > span {
   position: absolute;
   margin-top: 8px;
   font-size: 16px;
 }
 
-hr {
+.tab-items > li hr {
   margin: 0;
   border: 2px solid #d3d3d3;
   transform: skew(45deg);
 }
 
-/* tab-item active style */
 .tab-items > .active {
   font-size: 60px;
   color: #bd1425;
 }
 
-.active > hr {
+.tab-items > .active hr {
   border: 2px solid #bd1425;
   transform: skew(45deg);
 }
@@ -74,11 +80,11 @@ hr {
 .title-info > span {
   padding-left: 8px;
   font-size: 16px;
-  color: #b5b5b5;
+  color: #b4b4b4;
 }
 
 .form-group {
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
 .form-group > label {
@@ -108,7 +114,6 @@ input {
   padding-top: 12px;
   padding-bottom: 8px;
   font-size: 16px;
-  font-family: Arial, "Microsoft JhengHei";
   border: none;
   border-bottom: 1px solid #d3d3d3;
   outline: none;
@@ -118,8 +123,24 @@ input:focus {
   border-bottom: 2px solid #bd1425;
 }
 
-::placeholder {
-  color: #b5b5b5;
+input::-webkit-input-placeholder {
+  color: #b4b4b4;
+}
+
+input::-moz-placeholder {
+  color: #b4b4b4;
+}
+
+input:-ms-input-placeholder {
+  color: #b4b4b4;
+}
+
+input::-ms-input-placeholder {
+  color: #b4b4b4;
+}
+
+input::placeholder {
+  color: #b4b4b4;
 }
 
 .order-btn {
@@ -128,7 +149,7 @@ input:focus {
   margin-bottom: 80px;
 }
 
-button {
+.order-btn button {
   width: 250px;
   height: 50px;
   font-size: 18px;
@@ -141,7 +162,7 @@ button {
   outline: none;
 }
 
-button::after {
+.order-btn button::after {
   content: "\f061";
   position: absolute;
   padding-top: 2px;
@@ -150,7 +171,7 @@ button::after {
   color: #fff;
 }
 
-button:hover {
+.order-btn button:hover {
   opacity: .9;
   cursor: pointer;
 }
