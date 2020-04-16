@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Practice">
+  <meta name="keywords" content="HTML,SCSS,CSS,JS,jQUERY">
+  <meta name="author" content="Jess Wu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Practice | Bootstrap Badge</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap_index.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mailto:jiayu1551@gmail.com">Contact</a>
+      <a href="https://github.com/jesswu1551">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row mt-4 mb-4">
+      <div class="col-2 bd-sidebar">
+        <ul class="nav flex-column">
+          <div class="bd-toc"><a class="bd-toc-link" href="../index.html">Home</a></div>
+          <div class="bd-toc">Components</div>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap_index.html">Alerts</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="badge.html">Badge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button.html">Button</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="button_group.html">Button group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="card.html">Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collapse.html">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dropdown.html">Dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="input_group.html">Input group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jumbotron.html">Jumbotron</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list_group.html">List group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media_object.html">Media object</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modal.html">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navs.html">Navs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="navbar.html">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagination.html">Pagination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popover.html">Popover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progress.html">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scrollspy.html">Scrollspy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spinner.html">Spinner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="toast.html">Toast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tooltip.html">Tooltip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-8">
+        <h1>Badges</h1>
+
+        <div class="bd-example">
+          <h3>Examples</h3>
+          <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+          <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+          <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+          <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+          <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+          <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+        </div>
+
+        <div class="bd-example">
+          <button class="btn btn-primary" type="button">
+            Notifications <span class="badge badge-light">4</span>
+          </button>
+          <button class="btn btn-primary" type="button">
+            Profile <span class="badge badge-light">9</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+        </div>
+
+        <div class="bd-example">
+          <h3>Contextual variations</h3>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-light">Light</span>
+          <span class="badge badge-dark">Dark</span>
+        </div>
+
+        <div class="bd-example">
+          <h3>Pill badges</h3>
+          <span class="badge badge-pill badge-primary">Primary</span>
+          <span class="badge badge-pill badge-secondary">Secondary</span>
+          <span class="badge badge-pill badge-success">Success</span>
+          <span class="badge badge-pill badge-danger">Danger</span>
+          <span class="badge badge-pill badge-warning">Warning</span>
+          <span class="badge badge-pill badge-info">Info</span>
+          <span class="badge badge-pill badge-light">Light</span>
+          <span class="badge badge-pill badge-dark">Dark</span>
+        </div>
+
+        <div class="bd-example">
+          <h3>Links</h3>
+          <a class="badge badge-primary" href="#">Primary</a>
+          <a class="badge badge-secondary" href="#">Secondary</a>
+          <a class="badge badge-success" href="#">Success</a>
+          <a class="badge badge-danger" href="#">Danger</a>
+          <a class="badge badge-warning" href="#">Warning</a>
+          <a class="badge badge-info" href="#">Info</a>
+          <a class="badge badge-light" href="#">Light</a>
+          <a class="badge badge-dark" href="#">Dark</a>
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+</body>
+</html>
