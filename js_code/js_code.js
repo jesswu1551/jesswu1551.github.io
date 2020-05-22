@@ -169,3 +169,63 @@ console.log(calaArray(res1));
 console.log(getType(x));
 console.log(getUniq(res2));
 console.log(sumValues(res3));
+
+
+var obj1 = {
+  name: 'Hello',
+  age: 20,
+  mail: 'hello@gmail.com',
+  arr: ['x', 'y', 'z'],
+  fuc: function() { console.log('this is function') }
+}
+
+var obj2 = JSON.parse(JSON.stringify(obj1));
+console.log(obj1);
+console.log(obj2);
+
+
+function abc() {
+  'use strict';
+
+  if (true) {
+
+    function xyz() {
+      console.log('xyz');
+    }
+  }
+
+
+
+  if (true) {
+    function f1() { }
+  }
+
+  for (var i = 0; i < 5; i++) {
+    function f2() { }
+  }
+}
+
+function copyOwnPropertiesFrom(target, source) {
+  let props = Object.getOwnPropertyNames(source);
+
+  props.forEach(function (propKey) {
+    var desc = Object.getOwnPropertyDescriptor(source, propKey);
+    Object.defineProperty(target, propKey, desc);
+  });
+  return target;
+  /*
+  Object.getOwnPropertyNames(source)
+    .forEach(function (propKey) {
+      var desc = Object.getOwnPropertyDescriptor(source, propKey);
+      Object.defineProperty(target, propKey, desc);
+    });
+  return target;
+  */
+
+}
+
+
+var copyobj = Object.create(Object.getPrototypeOf(obj1));
+copyOwnPropertiesFrom(copyobj, obj1);
+
+console.log(copyobj);

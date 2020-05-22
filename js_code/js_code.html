@@ -9,14 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Practice | JS</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
   <script src="js_code.js"></script>
 </head>
 
-<body>
+<body id="body" >
 
   <!-- Start Header -->
-  <header>
+  <header id="header">
     <nav>
       <a href="about.html">About</a>
       <a href="mailto:jiayu1551@gmail.com">Contact</a>
@@ -25,6 +25,136 @@
   </header>
   <!-- End Header-->
 
+  <div id="d1" style="border:1px solid #000">hello world</div>
+  <p id="p1">Lorem, ipsum dolor.</p>
+  <p id="p2" data-roo="roo">Lorem, ips..</p>
+  <input id="t" type="text">
+
+  <ul id="ul">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ul>
+
+  <select id="mySelect">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+
+  <select size="1" onchange="changeEventHandler(event);">
+  <option>chocolate</option>
+    <option>strawberry</option>
+    <option>vanilla</option>
+  </select>
+
+  <form action="">
+    <!-- <input type="text" required oninvalid="console.log('invalid input')"> -->
+  <button id="btn" type="submit" onclick="clickBtn()">提交</button>
+  </form>
+</body>
+
+  <script>
+  var div = document.getElementById('d1');
+  var text = document.getElementById('t');
+  var ul = document.querySelector('ul');
+  var btn = document.getElementById('btn');
+
+  var uls = document.body.childNodes;
+
+  var doctype = document.doctype;
+  console.log(doctype.name);
+
+  var divStyle = div.style;
+  console.log('divStyle: ' + divStyle.cssText);
+
+  console.log('first: ' + document.firstElementChild.nodeName)
+  console.log(uls.length);
+
+  var x = document.getElementsByTagName("p");
+  console.log(x.length);
+
+  var p = document.createElement('p');
+  var text = document.createTextNode('hello');
+  p.appendChild(text);
+  document.body.appendChild(p);
+
+  var children = document.head.childNodes;
+
+  children.keys(console.log)
+  children.length // 34
+
+  var event = new CustomEvent('build', { 'detail': 'hello' });
+
+  function eventHandler(e) {
+    console.log(e.detail);
+  }
+
+  document.body.addEventListener('build', function (e) {
+    console.log(e.detail);
+  });
+
+  document.body.dispatchEvent(event);
+
+  function clickBtn() {
+    alert('hello!');
+  }
+
+  function callback(event) {
+    var tag = event.currentTarget.tagName;
+    console.log('Tag: ' + tag);
+  }
+
+  text.addEventListener('click', callback, false);
+  t.addEventListener('focus', function(event) { event.target.style.backgroundColor = 'red' },true)
+  t.addEventListener('blur', function (event) { event.target.style.backgroundColor = 'green' }, true)
+
+
+  div.addEventListener('dragstart', function (e) {
+    this.style.backgroundColor = 'red';
+  }, false);
+
+  div.addEventListener('dragend', function (e) {
+    this.style.backgroundColor = 'green';
+  }, false);
+
+  function changeEventHandler(event) {
+    console.log(event.target.value);
+  }
+
+  function inputHandler(e) {
+    console.log(e.target.value)
+  }
+
+  var mySelect = document.querySelector('#mySelect');
+  mySelect.addEventListener('input', inputHandler);
+
+  function isKeyPressed(event) {
+    if (event.ctrlKey == 1) {
+      alert("The CTRL key was pressed!")
+    }
+    else {
+      alert("The CTRL key was NOT pressed!")
+    }
+  };
+
+  ul.addEventListener('mouseenter', function(event) {
+    event.target.style.color = 'purple';
+    setTimeout(function () {
+      event.target.style.color = '';
+    }, 500);
+  }, false);
+
+  ul.addEventListener('mouseover', function (event) {
+    event.target.style.color = 'orange';
+    setTimeout(function () {
+      event.target.style.color = '';
+    }, 500);
+  }, false);
+
+
+
+</script>
 
 </body>
 
