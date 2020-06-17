@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" />
+    <script src="./js/sidebar.js"></script>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div id="mySidebar" class="sidebar" style="display: none;">
+      <a href="#">About</a>
+      <div class="form-group">
+        <label class="form-group-label">Table</label>
+        <select class="form-control" id="selectTab">
+          <option value="t1">1</option>
+          <option value="t2">2</option>
+        </select>
+      </div>
+      <div class="tab1">
+        <table>
+          <tr>
+            <th>Table</th>
+            <th>Preview</th>
+            <th>Select</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab2">
+        <table>
+          <tr>
+            <th>Table</th>
+            <th>Preview</th>
+            <th>Select</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <div class="main">
+        <button id="togbtn" class="openbtn"><i class="fa fa-caret-left"></i></button>
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      </div>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2 class='mb-3'>Data Table</h2>
+        <button id="button" >Delect</button>
+      </div>
+      <div class="m-3">
+         <table id="dtBasicExample" class="table table-hover" cellspacing="0">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+
+        </table>
+      </div>
+    </div>
+
+
+    </div>
+
+
+  </body>
+
+  <script>
+
+
+  // $(document).ready(function () {
+
+  //   var dataSetX = [], dataSub = [], len = 0;
+
+  //   var da = {
+  //     submit_time: ['2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07'],
+  //     feature: ['排名', '測試時間', 'daily-log', '排名', '測試時間', '排名', '測試時間', 'daily-log', '排名', '測試時間', '排名', '測試時間', 'daily-log', '排名', '測試時間'],
+  //     start_time: ['2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07'],
+  //     end_time: ['2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07', '2020-03-03', '2019-09-01', '2016-06-09', '2017-07-02', '2020-04-07'],
+  //     board_description: ['AAA', 'ZZZ', 'LLL', 'OOO', 'HHH', 'AAA', 'ZZZ', 'LLL', 'OOO', 'HHH', 'AAA', 'ZZZ', 'LLL', 'OOO', 'HHH'],
+  //     fixture_number: [120, 366, 16, 9464, 222, 31, 120, 366, 16, 95554, 222, 31, 120, 366, 16, 954, 222, 31],
+  //     part_number: [10, 204, 50, 690, 8, 10, 20, 50, 40, 8, 10, 20, 505, 40, 8],
+  //     station_id: [1, 3, 5, 40, 6, 1, 3, 5, 40, 36, 1, 3, 365, 40, 6],
+  //     top_n: [5, 10, 3, 10, 2, 5, 10, 3, 120, 2, 5, 10, 3, 10, 2],
+  //     time_unit: ['-', '-', 'V', '-', 'V', '-', '-', 'V', '-', 'V', '-', '-', 'V', '-', 'V'],
+  //     max_time: [100, 200, 3680, 200, 600, 10, 200, 300, 20, 600, 500, 200, 300, 200, 600],
+  //     status: ['true', 'true', '', 'true', 'true', 'true', 'true', 'true', 'true', '', 'true', '', 'true', 'true', 'true'],
+  //     delete: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
+  //     view: ['O', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
+  //     download: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'O'],
+  //   };
+
+  //   if (da && da.submit_time) {
+  //     if (!(da.submit_time instanceof Array)) {
+  //       let keys = Object.keys(da);
+  //       for (let i = 0, l = keys.length; i < l; i++) {
+  //         da[keys[i]] = [da[keys[i]]];
+  //       }
+  //     }
+  //     len = da.submit_time.length;
+  //   }
+
+  //   for (let i = 0, items = [], item = '', idx = 0; i < len; i++, items = [], item = '', idx = 0) {
+  //     dataSub = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+  //     dataSub[idx++] = da.submit_time[i];
+  //     dataSub[idx++] = da.feature[i];
+  //     dataSub[idx++] = da.start_time[i];
+  //     dataSub[idx++] = da.end_time[i];
+  //     dataSub[idx++] = da.board_description[i];
+  //     dataSub[idx++] = da.fixture_number[i];
+  //     dataSub[idx++] = da.part_number[i];
+  //     dataSub[idx++] = da.station_id[i];
+  //     dataSub[idx++] = da.top_n[i];
+  //     dataSub[idx++] = da.time_unit[i];
+  //     dataSub[idx++] = da.max_time[i];
+  //     dataSub[idx++] = da.status[i] ? '<i class="fa fa-check text-success"></i>' : '<i class="fa fa-times text-danger"></i>';
+  //     dataSub[idx++] = da.delete[i];
+  //     dataSub[idx++] = da.view[i];
+  //     dataSub[idx++] = da.download[i];
+
+  //     for (let w = 0; w < dataSub.length; w++) {
+  //       if (dataSub[w] == undefined) {
+  //         dataSub[w] = '';
+  //       }
+  //     }
+  //     dataSetX.push(dataSub);
+  //   }
+
+  //   var table = $('#dtBasicExample').DataTable({
+  //     "dom": 'Bfrtip',
+  //     "data": dataSetX,
+  //     "columns": [
+  //       {title: "1", class: "text-center" },
+  //       {title: "2", class: "text-center" },
+  //       {title: "3", class: "text-center" },
+  //       {title: "4", class: "text-center" },
+  //       {title: "5", class: "text-center" },
+  //       {title: "6", class: "text-center" },
+  //       {title: "7", class: "text-center" },
+  //       {title: "8", class: "text-center" },
+  //       {title: "9", class: "text-center" },
+  //       {title: "10", class: "text-center" },
+  //       {title: "11", class: "text-center" },
+  //       {title: "12", class: "text-center" },
+  //       {title: "13", class: "text-center" },
+  //       {title: "14", class: "text-center" },
+  //       {title: "15", class: "text-center" },
+  //     ],
+  //     "columnDefs": [{
+  //       orderable: false,
+  //       className: 'select-checkbox',
+  //       targets: 0,
+  //     }],
+  //     "select": true,
+
+
+  //     "buttons": [
+  //       {
+  //         text: 'Select all',
+  //         action: function () {
+  //         }
+  //       },
+  //       {
+  //         text: 'Select none',
+  //         action: function () {
+  //         }
+  //       }
+  //     ]
+  //   });
+
+  //   $('#dtBasicExample tbody').on('click', 'tr', function () {
+  //     if ($(this).hasClass('selected')) {
+  //       $(this).removeClass('selected');
+  //     } else {
+  //       table.$('tr.selected').removeClass('selected');
+
+  //       $(this).addClass('selected');
+  //     }
+  //   });
+  // });
+
+
+
+    $(document).ready(function () {
+
+        var dataset = [
+          ['','Gloria Little', 'Systems Administrator', 'New York', '59', '2009/04/10', '$237,500'],
+          ['','Tiger Nixon', 'System Architect', 'Edinburgh', '61', '2011/04/25', '$320,800'],
+          ['','Quinn Flynn', 'Support Lead', 'Edinburgh', '22', '2013/03/03', '$342,000'],
+          ['','Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13', '$132,000'],
+          ['','Sonya Frost', 'Software Engineer', 'Edinburgh', '23', '2008/12/13', '$103,600'],
+          ['','Haley Kennedy', 'Senior Marketing Designer', 'London', '43', '2012/12/18', '$313,500'],
+          ['','Cedric Kelly', 'Senior Javascript Developer', 'Edinburgh', '22', '2012/03/29', '$433,060'],
+          ['','Herrod Chandler', 'Sales Assistant', 'San Francisco', '59', '2012/08/06', '$137,500'],
+          ['','Charde Marshall', 'Regional Director', 'San Francisco', '36', '2008/10/16', '$470,600'],
+          ['','Tatyana Fitzpatrick', 'Regional Director', 'London', '19', '2010/03/17', '$385,750'],
+          ['','Gloria Little', 'Systems Administrator', 'New York', '59', '2009/04/10', '$237,500'],
+          ['','Tiger Nixon', 'System Architect', 'Edinburgh', '61', '2011/04/25', '$320,800'],
+          ['','Quinn Flynn', 'Support Lead', 'Edinburgh', '22', '2013/03/03', '$342,000'],
+          ['','Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13', '$132,000'],
+          ['','Sonya Frost', 'Software Engineer', 'Edinburgh', '23', '2008/12/13', '$103,600'],
+          ['','Haley Kennedy', 'Senior Marketing Designer', 'London', '43', '2012/12/18', '$313,500'],
+          ['','Cedric Kelly', 'Senior Javascript Developer', 'Edinburgh', '22', '2012/03/29', '$433,060'],
+          ['','Herrod Chandler', 'Sales Assistant', 'San Francisco', '59', '2012/08/06', '$137,500'],
+          ['','Charde Marshall', 'Regional Director', 'San Francisco', '36', '2008/10/16', '$470,600'],
+          ['','Tatyana Fitzpatrick', 'Regional Director', 'London', '19', '2010/03/17', '$385,750'],
+          ['','Quinn Flynn', 'Support Lead', 'Edinburgh', '22', '2013/03/03', '$342,000'],
+          ['','Bradley Greer', 'Software Engineer', 'London', '41', '2012/10/13', '$132,000'],
+          ['','Sonya Frost', 'Software Engineer', 'Edinburgh', '23', '2008/12/13', '$103,600'],
+          ['','Haley Kennedy', 'Senior Marketing Designer', 'London', '43', '2012/12/18', '$313,500'],
+          ['','Cedric Kelly', 'Senior Javascript Developer', 'Edinburgh', '22', '2012/03/29', '$433,060'],
+          ['','Herrod Chandler', 'Sales Assistant', 'San Francisco', '59', '2012/08/06', '$137,500'],
+          ['','Charde Marshall', 'Regional Director', 'San Francisco', '36', '2008/10/16', '$470,600'],
+          ['','Tatyana Fitzpatrick', 'Regional Director', 'London', '19', '2010/03/17', '$385,750']
+        ];
+        /*
+        var da = {
+          name =['Gloria Little', 'Tiger Nixon', 'Quinn Flynn', 'Bradley Greer', 'Sonya Frost', 'Cedric Kelly', 'Haley Kennedy', 'Tatyana Fitzpatrick', 'Herrod Chandler', 'Charde Marshall', 'Tiger Nixon', 'Gloria Little'],
+          position =['Systems Administrator', 'System Architect', 'Support Lead', 'Software Engineer', 'Software Engineer', 'Senior Marketing Designer', 'Senior Javascript Developer', 'Sales Assistant', 'Regional Director', 'Regional Director', 'Systems Administrator', 'System Architect'],
+          city =['New York', 'Edinburgh', 'Edinburgh', 'London', 'Edinburgh', 'London', 'Edinburgh', 'San Francisco', 'San Francisco', 'London', 'New York', 'Edinburgh'],
+          age =['59', '61', '22', '41', '23', '43', '22', '59', '36', '19', '59', '61'],
+          birth =['2009/04/10', '2011/04/25', '2013/03/03', '2012/10/13', '2008/12/13', '2012/12/18', '2012/03/29', '2012/08/06', '2008/10/16', '2010/03/17', '2009/04/10', '2011/04/25'],
+          salary =['$237,500', '$320,800', '$342,000', '$132,000', '$103,600', '$313,500', '$433,060', '$137,500', '$470,600', '$385,750', '$237,500', '$320,800'],
+        }
+        */
+        let edit = '<i class="fa fa-edit text-info action-icon-sm product-edit editcolumn" style="cursor: pointer;" data-col="colnamex" data-userid="useridx" data-boardid="boardidx" data-toggle="modal" href="#myModal"></i>';
+
+        for (var i = 0; i < dataset.length; i++) {
+          dataset[i].push(edit);
+        };
+
+
+        var table = $('#dtBasicExample').DataTable({
+          columnDefs: [{
+            orderable: false,
+            className: 'select-checkbox select-checkbox-all',
+            targets: 0
+          }],
+          select: {
+            style: 'os',
+            selector: 'td:first-child'
+          },
+          order: [[1, 'asc']],
+          "scrollY": 300,
+          "scrollCollapse": true,
+          "data": dataset,
+          "ordering": true,
+          "columns": [
+            { "title": "<input align='center' type='checkbox' class='checkAll' checked='checked'  id='checkAll'>" },
+            { "title": "Name", "class": "text-center" },
+            { "title": "Position", "class": "text-center" },
+            { "title": "Location", "class": "text-center" },
+            { "title": "Age", "class": "text-center" },
+            { "title": "Date", "class": "text-center" },
+            { "title": "Salary", "class": "text-center" },
+            { "title": "Edit", "class": "text-center" }
+          ],
+          "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "all"]],
+          "select": true,
+          "language": {
+            "lengthMenu": "顯示 _MENU_ 筆資料",
+            "zeroRecords": "找不到此筆資料",
+            "search": "搜尋",
+            "info": "從 _START_ 到 _END_ / 共 _TOTAL_ 筆資料",
+          "paginate": {
+            "next": ">",
+            "previous": "<"
+          },
+
+          },
+        });
+
+        $('#button').click(function () {
+        table.row('.selected').remove().draw(false);
+      });
+
+        $('#dtBasicExample tbody').on('click', 'tr', function () {
+          if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+          } else {
+            table.$('tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+          }
+        });
+
+        $("#togbtn").on('click', function (e) {
+          $("#mySidebar").toggleClass("sidebar-collapsed");
+          $("#main").toggleClass("main-collapsed left-zero");
+          $("#togbtn").toggleClass("btn-collapsed");
+        });
+
+        $(".tab1").hide();
+        $(".tab2").hide();
+        $("#selectTab").change(function () {
+          if ($(this).val() == 't1') {
+            $(".tab1").show();
+            $(".tab2").hide();
+          } else if ($(this).val() == 't2') {
+            $(".tab2").show();
+            $(".tab1").hide();
+          }
+        })
+      });
+
+
+  </script>
+  </html>
